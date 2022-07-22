@@ -10,3 +10,11 @@ describe ('Pizza', () => {
     expect(pizza.price).toEqual(0)
   });
 });
+
+describe ('setPrice', () => {
+  
+  test('return setPrice for pizza', () => {
+    const pizza = new Pizza();
+    expect(setPrice('small')).toBe(9);
+  });
+});
