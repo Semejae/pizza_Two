@@ -24,7 +24,25 @@ describe ('Pizza', () => {
     const myPizza = new Pizza();
     myPizza.setPrice();
     expect(myPizza.price).toEqual(13);
+  }); 
+  
+  test('return setToppingPrice for pizza', () => {
+    const myPizza = new Pizza('blank');
+    myPizza.setToppingPrice();
+    expect(myPizza.topping).toEqual();
   });
+  test('return setToppingPrice for pizza', () => {
+    const myPizza = new Pizza('cheese');
+    myPizza.setToppingPrice();
+    expect(myPizza.topping).toEqual();
+  });
+  test('return setToppingPrice for pizza', () => {
+    const myPizza = new Pizza('pepperoni');
+    myPizza.setToppingPrice();
+    expect(myPizza.topping).toEqual();
+  });
+;
+
 
 
 });
