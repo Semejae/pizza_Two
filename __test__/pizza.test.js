@@ -9,12 +9,30 @@ describe ('Pizza', () => {
     expect(pizza.topping).toEqual()
     expect(pizza.price).toEqual(0)
   });
+
+  test('return setPrice for pizza', () => {
+    const myPizza = new Pizza('small');
+    myPizza.setPrice();
+    expect(myPizza.price).toEqual(9);
+  });
+  test('return setPrice for pizza', () => {
+    const myPizza = new Pizza('medium');
+    myPizza.setPrice();
+    expect(myPizza.price).toEqual(11);
+  });
+  test('return setPrice for pizza', () => {
+    const myPizza = new Pizza();
+    myPizza.setPrice();
+    expect(myPizza.price).toEqual(13);
+  });
+
+
 });
 
-// describe ('Pizza.prototype.setPrice', () => {
+// describe ('setPrice', () => {
   
-//   test('return Pizza.prototype.setPrice for pizza', () => {
+//   test('return setPrice for pizza', () => {
 //     const pizza = new Pizza();
-//     expect(Pizza.prototype.setPrice('small')).toBe(9);
+//     expect(setPrice(this.topping)).toBe('small');
 //   });
 // });
