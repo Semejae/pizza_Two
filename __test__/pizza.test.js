@@ -11,10 +11,10 @@ describe ('Pizza', () => {
   });
 });
 
-describe ('Pizza.prototype.setPrice', () => {
+// describe ('Pizza.prototype.setPrice', () => {
   
-  test('return Pizza.prototype.setPrice for pizza', () => {
-    const pizza = new Pizza();
-    expect(Pizza.prototype.setPrice('small')).toBe(9);
-  });
-});
+//   test('return Pizza.prototype.setPrice for pizza', () => {
+//     const pizza = new Pizza();
+//     expect(Pizza.prototype.setPrice('small')).toBe(9);
+//   });
+// });

@@ -1,3 +1,3 @@
-import Pizza from './pizza.js ';
+import Pizza from './../src/pizza.js';
 
-let pizza = new Pizza();
+// let customer = new Pizza();
