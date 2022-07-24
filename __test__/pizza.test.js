@@ -1,4 +1,4 @@
-import Pizza from './../src/pizza.js';
+import Pizza from '../src/js/pizza.js';
 
 
 describe ('Pizza', () => {
