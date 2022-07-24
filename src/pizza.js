@@ -31,3 +31,18 @@ Pizza.prototype.setToppingPrice = function() {
     this.price = this.price * 2
   }
 };
+
+// ui logic
+
+window.addEventListener('load',function(){
+  let myResults = document.getElementById('result')
+  input.addEventListener('submit',function(event){
+    event.preventDefault();
+    const pizzaTopping = document.querySelector('#toppings').value;
+    const pizzaSize = document.querySelector('#size').value;
+    const customer = new Pizza(pizzaSize,pizzaTopping)
+    customer.setPrice();
+    customer.setToppingPrice();
+    myResults.innerText = ('$' + customer.price + '.00')
+  });
+});
